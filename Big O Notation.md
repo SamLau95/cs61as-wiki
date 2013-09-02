@@ -4,4 +4,12 @@ Suppose that we have written a function that given an input of size $n$ takes $2
 
 Note that given this definition, both a function that takes $n^2$ steps and a function that takes $100000n^2$ would also be considered $O(n^2)$. Because of this, Big O notation is considered a crude measurement of how fast a function will actually run, and it is mostly used to compare running times for a function given different size inputs. Additionally, our function given above is technically also $O(n^3)$ and $O(2^n)$, since both are greater than $n^2$ for large $n$. So that our measure of running time is as accurate as possible, the smallest possible function that still satisfies the specification of the notation is typically given, so we say that our function is $O(n^2)$ rather than $O(n^3)$ or another larger function. 
 
-Big O notation is frequently used to characterize the running time of programs. To see an example, go to [Orders of Growth](../orders-growth/).
+These are some of the most commonly seen time complexities of functions: 
+- $O(1)$ (constant time)
+- $O(n)$ (linear time)
+- $O(n^2)$ (quadratic time)
+- $O(logn)$ (logarithmic time)
+- $O(nlogn)$ (linearithmic time)
+- $O(2^n)$ (exponential time)
+
+Big O notation is the most frequently used notation to characterize the running time of programs. To see an example, go to [Orders of Growth](../orders-growth/).

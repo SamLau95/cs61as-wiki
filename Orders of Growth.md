@@ -1,8 +1,10 @@
-A special form is an [expression](https://edge.edx.org/courses/uc-berkeley/cs61as-1x/SICP/wiki/cs61as-1x/expression/) that follows special [evaluation](https://edge.edx.org/courses/uc-berkeley/cs61as-1x/SICP/wiki/cs61as-1x/expression/) rules. Usually, an expression represents a procedure invocation, so the general rule is that Scheme first evaluates all the subexpressions, and then applies the resulting procedure to the resulting argument values. The specialness of special forms is that Scheme doesn't evaluate all the subexpressions. Instead, each special form has its own particular evaluation rule.
+An algorithm can be said to exhibit a growth rate on the order of a mathematical function if beyond a certain input size n, the function f(n) times a positive constant provides an upper bound or limit for the run-time of that algorithm. In other words, for a given input size n greater than some n and a constant c, the running time of that algorithm will never be larger than c × f(n). This concept is frequently expressed using [Big O notation](https://edge.edx.org/courses/uc-berkeley/cs61as-1x/SICP/wiki/cs61as-1x/big-o-notation/). 
 
-ex: defining a procedure `square`
+For example, 
 
-  (define (square x)
-      (* x x))
+  (define (recursive-funct x)
+      (if (= x 0)
+          1
+            (+ 1 (recursive-funct (- x 1)))))
 
-For example, when we defined `square`, no part of the definition was evaluated: not `square`, not `x`, and not `(* x x)`. It wouldn't make sense to evaluate `(square x)` because you can't invoke the square procedure before you [define](https://edge.edx.org/courses/uc-berkeley/cs61as-1x/SICP/wiki/cs61as-1x/define/) it. The entire special form that starts with `define` is just a completely different kind of thing from a procedure call. In Scheme there is no procedure named `define`. 
+since the run-time of the above function grows linearly as its input size increases, `recursive-funct` can be said to be of order O(n).
