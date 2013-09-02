@@ -1,6 +1,6 @@
 While it difficult to predict exactly how much time a function will take to run because of differences in processor speeds and other factors, it is still possible to characterize functions by their orders of growth, a measurement of how a function's resource usage grows given differently sized inputs. In nearly all cases of orders of growth, we use a function's asymptotic behavior, or how a function behaves given large inputs. Orders of growth are typically used to characterize an algorithm's running time and memory usage.
 
-One way to specify an algorithm's order of growth is if beyond a certain input size $n$, the function $f(n)$ times a positive constant provides an upper bound or limit for the resource consumed for that algorithm. In other words, for a large value of $n$ and a constant $c$, the resources consumed of that algorithm will never be larger than $c × f(n)$. This concept is expressed using [Big O notation](https://edge.edx.org/courses/uc-berkeley/cs61as-1x/SICP/wiki/cs61as-1x/big-o-notation/). 
+One way to specify an algorithm's order of growth is if beyond a certain input size $n$, the function $f(n)$ times a positive constant provides an upper bound or limit for the resource consumed for that algorithm. In other words, for a large value of $n$ and a constant $c$, the resources consumed of that algorithm will never be larger than $c × f(n)$. This concept is expressed using [Big O notation](wiki:big-o-notation). 
 
 For example, for
 
