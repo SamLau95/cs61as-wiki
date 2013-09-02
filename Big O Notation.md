@@ -14,4 +14,4 @@ These are some of the most commonly seen time complexities of functions ordered 
 
 Big O notation is the most frequently used notation to characterize the running time of programs. For example, from the list above we notice that merge sort and selection accomplish the same task (sorting a list), but merge sort is $O(nlogn)$ whereas selection sort is $O(n^2)$, so we expect merge sort to be significantly faster than selection sort for large lists. 
 
-To see more examples, go to [Orders of Growth](../orders-growth/).
+To read more, go to [Orders of Growth](../orders-growth/).
