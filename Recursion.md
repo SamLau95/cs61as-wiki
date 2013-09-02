@@ -1,4 +1,4 @@
-A technique where a function calls itself with the smaller part of the task. It is the central idea of computer science, but usually considered inefficient compared to [iteration](https://edge.edx.org/courses/uc-berkeley/cs61as-1x/SICP/wiki/cs61as-1x/iteration/). 
+A technique where a function calls itself with the smaller part of the task. It is the central idea of computer science
 
 ex: 
 

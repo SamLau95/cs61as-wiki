@@ -14,14 +14,14 @@ In languages without higher-order procedures, this procedure would be implemente
     (define li '(1 2 3 4))
     (define (cube x) (* x x x))
 
-    ; Without higher-order procedures
+    ;; Without higher-order procedures
     (define (cube-list li)
       (if (null? li)
           '()
           (cons (cube (car li)) (cube-list (cdr li)))))
     (cube-list li)  ; Outputs '(1 8 27 64)
 
-    ; With higher-order procedures
+    ;; With higher-order procedures
     (define (cube-list2 li) (map cube li))
     (cube-list2 li) ; Outputs '(1 8 27 64)
 
