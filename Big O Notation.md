@@ -5,6 +5,7 @@ Suppose that we have written a function that given an input of size $n$ takes $2
 Note that given this definition, both a function that takes $n^2$ steps and a function that takes $100000n^2$ would be considered $O(n^2)$. Because of this, Big O notation is considered a crude measurement of how fast a function will actually run, and it is mostly used to compare running times for a function given different size inputs. Additionally, our function given above is technically also $O(n^3)$ and $O(2^n)$, since both are greater than $n^2$ for large $n$. So that our measure of running time is as accurate as possible, the smallest possible function that still satisfies the specification of the notation is typically given, so we say that our function is $O(n^2)$ rather than $O(n^3)$ or another larger function. 
 
 These are some of the most commonly seen time complexities of functions ordered from smallest to greatest:
+
 - $O(1)$ - constant time, eg. arithmetic operations
 - $O(logn)$ - logarithmic time, eg. [binary search](http://en.wikipedia.org/wiki/Binary_search_algorithm)
 - $O(n)$ - linear time, eg. printing every element in a list
