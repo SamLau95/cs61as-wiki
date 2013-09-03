@@ -14,7 +14,7 @@ Using recursion often allows for procedures that closely mirror mathematical rec
 
 Note how this procedure is a direct translation of the mathematical definition.
 
-Tail-recursion is an optimized form of recursion so that the program uses less memory. In the example above, it is clear that in the final statement `(* n (factorial (- n 1)))` the computer must "hold on" to the value of `n` while computing `(factorial (- n 1))`. Because of this, the computer must use memory to keep track of the different values of `n` as the program proceeds. A tail-recursive version of `factorial` (where the computer does not have to use memory keeping track of the value of n) can be written as follows:
+Tail-recursion is an optimized form of recursion so that the program uses less memory. In the example above, it is clear that in the final statement `(* n (factorial (- n 1)))` the computer must "hold on" to the value of `n` while computing `(factorial (- n 1))`. Because of this, the computer must use memory to keep track of the different values of `n` as the program proceeds. A tail-recursive version of `factorial` (where the computer does not have to use memory keeping track of the value of `n`) can be written as follows:
 
     (define (factorial n)
       (fact-iter 1 1 n))
