@@ -6,6 +6,7 @@ In computer science, a higher-order procedure is a [procedure](wiki:procedure) t
 In Scheme, higher-order procedures are supported because all procedures are first-class (see [first-class procedures](wiki:first-class-procedure)).
 
 Ex: A procedure that outputs a procedure
+
     > (define (add-n n)
         (lambda (x) (+ x n)))
     > (define 3+ (add-n 3))
