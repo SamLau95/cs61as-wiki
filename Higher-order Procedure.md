@@ -10,8 +10,10 @@ Ex: A procedure that outputs a procedure
         (lambda (x) (+ x n)))
     > (define 3+ (add-n 3))
     > (define 5+ (add-n 5))
-    > (3+ 5) ; Outputs 8
-    > (5+ 10) ; Outputs 15
+    > (3+ 5)
+    8
+    > (5+ 10)
+    15
 
 `add-n` takes an argument `n` and returns a function that takes another parameter and returns it added to `n`.
 
