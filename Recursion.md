@@ -1,4 +1,4 @@
-See also: [Recursion](../recursion)
+See also: [Recursion](wiki:recursion)
 
 A technique where a function calls itself with a smaller part of the task. It is a central idea of computer science, allowing many programs to be written much more succinctly as well as being especially important in functional languages such as Scheme because of the lack of looping constructs such as `for` or `while`. Recursive procedures are characterized by two properties:
 

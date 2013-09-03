@@ -1,4 +1,4 @@
-In computer science, iteration is the process of repeating a set of instructions a specified number of times or until a specific result is achieved. Many other languages use loop constructs such as `for` and `while` to create iterative processes. However, because of the lack of looping constructs in Scheme, iteration in Scheme is implemented using [tail-recursion](https://edge.edx.org/courses/uc-berkeley/cs61as-1x/SICP/wiki/cs61as-1x/recursion/).
+In computer science, iteration is the process of repeating a set of instructions a specified number of times or until a specific result is achieved. Many other languages use loop constructs such as `for` and `while` to create iterative processes. However, because of the lack of looping constructs in Scheme, iteration in Scheme is implemented using [tail-recursion](wiki:recursion).
 
 *Definition of factorial function using iteration*
 
