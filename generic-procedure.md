@@ -1,0 +1,1 @@
+A generic procedure is a [procedure](wiki:procedure) that can operate on data that may be represented in more than one way.
