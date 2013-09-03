@@ -3,7 +3,19 @@ In computer science, a higher-order procedure is a [procedure](wiki:procedure) t
 - take one or more procedures as an input
 - output a procedure
 
-In Scheme, higher-order procedures are supported because all procedures are first-class (see [first-class procedures](wiki:first-class-procedure)). For example, the built-in procedure `map` takes two arguments: a function and a list, and applies the function to each element in the list.
+In Scheme, higher-order procedures are supported because all procedures are first-class (see [first-class procedures](wiki:first-class-procedure)).
+
+Ex: A procedure that outputs a procedure
+    > (define (add-n n)
+        (lambda (x) (+ x n)))
+    > (define 3+ (add-n 3))
+    > (define 5+ (add-n 5))
+    > (3+ 5) ; Outputs 8
+    > (5+ 10) ; Outputs 15
+
+`add-n` takes an argument `n` and returns a function that takes another parameter and returns it added to `n`.
+
+The built-in procedure `map` takes two arguments: a function and a list, and applies the function to each element in the list.
 
     > (define (square x) (* x x))
     > (map square '(1 2 3))
@@ -25,4 +37,4 @@ In languages without higher-order procedures, this procedure would be implemente
     (define (cube-list2 li) (map cube li))
     (cube-list2 li) ; Outputs '(1 8 27 64)
 
-Also note that if we wanted to do something different to the list elements (eg. raise to the fourth power), without higher-order procedures we would have to define another function and repeat much of the body of `cube-list`, whereas with `map` we just need to map the new function to the list.
+Also note that if we wanted to do something different to the list elements (eg. square every element), without higher-order procedures we would have to define another function and repeat much of the body of `cube-list`, whereas with `map` we just need to map the new function to the list.
