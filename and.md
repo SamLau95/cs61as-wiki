@@ -20,7 +20,7 @@ Why `and` is a special form: it [evaluates](wiki:expression) its arguments in or
     > (divisible? 'aardvark 4)
     ERROR: AARDVARK IS NOT A NUMBER
 
-Another subtle point about `and`: if all its arguments evaluate to true, instead of simply returning `#t` it will return the value of its last argument.
+A subtle point about `and`: similar to [or](wiki:or) if all its arguments evaluate to true, instead of simply returning `#t` it will return the value of its last argument.
 
     > (and #t (+ 3 5))
     8
