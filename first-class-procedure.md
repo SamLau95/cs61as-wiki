@@ -1,10 +1,3 @@
-[Procedures](wiki:procedure) are said to be first-class if they can be passed around as data.  Specifically, first-class procedures can take other first-class procedures as [arguments](wiki:argument), can be returned by other first-class procedures, and can be assigned to [variables](wiki:variable). All procedures in [Scheme](wiki:scheme) are first class.
+[Procedures](wiki:procedure) are said to be first-class if they can be passed around as data like integers or lists in Scheme.  Specifically, first-class procedures can take other procedures as [arguments](wiki:argument), can be returned by other procedures, and can be assigned to [variables](wiki:variable). All procedures in [Scheme](wiki:scheme) are first class, a key distinction from some other languages that allows for [higher-order procedures](wiki:higher-order-procedure).
 
-Example:
-
-    (define (make-double f)       ; Takes a first-class procedure f as an argument
-      (lambda (x) (f (f x))))     ; Returns a first-class procedure
-    
-    (define 2+ (make-double 1+))  ; Assign a first-class procedure to the 2+ variable
-    
-    (2+ 5)                        ; Call the new procedure, returns 7
+To see examples, go to [Higher-Order Procedures](wiki:higher-order-procedure).
