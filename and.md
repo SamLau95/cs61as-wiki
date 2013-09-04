@@ -1,4 +1,4 @@
-In [Scheme](../scheme/), `and` is a [special form](wiki:special-form/). It checks to see if all its [arguments](wiki:argument) are true. 
+In [Scheme](../scheme/), `and` is a [special form](wiki:special-form/). It checks whether all its [arguments](wiki:argument) are true. 
 
     > (and (> 5 3) (< 2 4))
     #t
