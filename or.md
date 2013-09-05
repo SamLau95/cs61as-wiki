@@ -6,7 +6,7 @@ In [Scheme](wiki:scheme), `or` is a [special form](wiki:special-form). It checks
     #f
 
 
-Why `or` is a special form: it [evaluates](wiki:expression) its arguments in order from left to right and stops as soon as one of its arguments evaluates to true.
+Why `or` is a special form: it [evaluates](wiki:expression) its arguments and stops as soon as one of its arguments evaluates to true.
 
     > (or #f #t (/ 1 0))
     #t

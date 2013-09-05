@@ -5,7 +5,7 @@ In [Scheme](../scheme/), `and` is a [special form](wiki:special-form/). It check
     > (and (> 5 3) (< 2 1))
     #f
 
-Why `and` is a special form: it [evaluates](wiki:expression) its arguments in order from left to right and stops as soon as it can, returning `#f` as soon as any argument evaluates to false. This turns out to be useful:
+Why `and` is a special form: it [evaluates](wiki:expression) its arguments and stops as soon as it can, returning `#f` as soon as any argument evaluates to false. This turns out to be useful:
 
     > (define (divisible? big small)
         (= (remainder big small) 0))
