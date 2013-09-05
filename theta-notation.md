@@ -1,1 +1,3 @@
-Theta notation relates the running-time of a function to the size of its arguments by providing both a lower and an upper bound on how the running time will increase given large inputs. We say a function $f(n) = \theta(g(n))$ if and only if $f(n)$ is always less than than or equal to $g(n)$ multiplied by some constant for large values of $n$.
+Big Theta notation relates the running-time of a function to the size of its arguments by providing both a lower and an upper bound on how the running time will increase given large inputs. We say a function $f(n) = \Theta(g(n))$ if and only if $f(n)$ is always less than than or equal to $g(n)$ multiplied by some constant and greater than $g(n)$ multiplied by some other constant for large values of $n$.
+
+Mathematically this is represented by writing: $k \cdot g(n) \le f(n) \le K \cdot g(n)$ for some constants $k$ and $K$ and for large values of $n$; $f(n)$ is sandwiched by $g(n)$. Because Big Theta notation
