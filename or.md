@@ -8,7 +8,7 @@ In [Scheme](wiki:scheme), `or` is a [special form](wiki:special-form). It checks
 
 Why `or` is a special form: it [evaluates](wiki:expression) its arguments in order from left to right and stops as soon as one of its arguments evaluates to true.
 
-    > (or #f #f #t (/ 1 0))
+    > (or #f #t (/ 1 0))
     #t
 
 A subtle point about `or`: similar to [and](wiki:and), if any one of its arguments evaluate to true (it evaluates to anything besides `#f`), `or` returns the value of the evaluated expression rather than just simply `#t`.
