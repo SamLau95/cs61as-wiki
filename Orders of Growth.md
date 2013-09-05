@@ -4,4 +4,4 @@ The [most common notations](http://en.wikipedia.org/wiki/Big_O_notation#Family_o
 
 - [Big O notation](wiki:big-o-notation), which specifies an upper bound and is most widely used.
 - Big Omega notation, which specifies a lower bound
-- Theta notation, which specifies both a lower and an upper bound
+- [Big Theta notation](wiki:big-theta-notation), which specifies both a lower and an upper bound
