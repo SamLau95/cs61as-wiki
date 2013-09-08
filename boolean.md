@@ -5,4 +5,4 @@ A boolean is an [expression](wiki:expression) that results in a [value](wiki:val
   > (if 1234
       (+ 1 1)
       (/ 1 0))
-  2 ;; Doesn't fail because 1234 is considered true
+  2 ;; Doesn't raise an error because 1234 is considered true
